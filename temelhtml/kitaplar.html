@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stil.css">
+    <title>Kitap Listesi ve İletişim</title>
+</head>
+<body>
+    <nav class="e-ust-menu">
+        <a href="index.html">Anasayfa</a>
+        <a href="kitaplar.html">Kitap Listesi</a>
+        <a href="giris.html">Giriş Yap / Kayıt</a>
+        <a href="admin.html">Admin Paneli</a>
+    </nav>
+
+    <main style="padding: 20px;">
+        <h3>Kulüp Kitap Listesi</h3>
+        <table class="e-kitap-tablosu">
+            <thead>
+                <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Fiyat</th>
+                </tr>
+            </thead>
+            <tbody id="e-genel-kitap-listesi"></tbody>
+        </table>
+
+        <hr>
+
+        <h3>Bizimle İletişime Geçin</h3>
+        <section class="e-form-alani">
+            <form id="e-iletisim-formu">
+                <input type="text" id="e-form-isim" placeholder="Adınız Soyadınız" required>
+                
+                <label>Kulübümüze Üye misiniz?</label>
+                <div>
+                    <input type="radio" name="uye_durum" value="evet"> Evet
+                    <input type="radio" name="uye_durum" value="hayir"> Hayır
+                </div>
+
+                <label>Mesaj Kategorisi:</label>
+                <select id="e-form-kategori">
+                    <option value="oneri">Öneri</option>
+                    <option value="soru">Soru</option>
+                    <option value="sikayet">Şikayet</option>
+                </select>
+
+                <textarea id="e-form-mesaj" placeholder="Mesajınız" rows="5" required></textarea>
+                <button type="submit">Mesajı Gönder</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="istekler.js"></script>
+</body>
+</html>

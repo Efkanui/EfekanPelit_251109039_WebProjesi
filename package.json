@@ -1,0 +1,15 @@
+{
+  "name": "efekan_pelit_251109039_webprojesi",
+  "version": "1.0.0",
+  "description": "Web Programlama Dersi Proje Ödevi",
+  "main": "sunucu/baslatici.js",
+  "scripts": {
+    "start": "node sunucu/baslatici.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7",
+    "sqlite3": "^5.1.7"
+  }
+}

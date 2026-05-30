@@ -1,0 +1,98 @@
+/* Hocam projenin ana rengini öğrenci numaramın son hanesine göre lacivert seçtim */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+.e-ust-menu {
+    background-color: #191970;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.e-ust-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.e-kapak-alani {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.e-kapak-alani img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.e-karsilama-yazisi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(25, 25, 112, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+
+.e-kitap-tablosu {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.e-kitap-tablosu th {
+    background-color: #191970;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.e-kitap-tablosu td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hocam burada satırların tek ve çift seriler halinde renklendirilmesini sağladım */
+.e-kitap-tablosu tbody tr:nth-child(even) {
+    background-color: #e6e6fa;
+}
+
+.e-kitap-tablosu tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+.e-form-alani form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.e-form-alani input, .e-form-alani select, .e-form-alani textarea {
+    padding: 10px;
+    border: 1px solid #191970;
+    border-radius: 4px;
+}
+
+.e-form-alani button {
+    background-color: #191970;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stil.css">
+    <title>Yönetim Paneli | 251109039</title>
+</head>
+<body>
+    <nav class="e-ust-menu">
+        <a href="index.html">Anasayfa</a>
+        <a href="kitaplar.html">Kitap Listesi</a>
+        <a href="admin.html">Admin Paneli</a>
+    </nav>
+
+    <main style="padding: 20px;">
+        <h2>Kitap Yönetim Paneli (251109039)</h2>
+        
+        <section class="e-form-alani">
+            <h3>Yeni Kitap Ekle</h3>
+            <form id="e-kitap-ekle-formu">
+                <input type="text" id="e-kitap-adi" placeholder="Kitap Adı" required>
+                <input type="text" id="e-yazar-adi" placeholder="Yazar Adı" required>
+                <input type="number" id="e-kitap-fiyat" placeholder="Fiyatı (TL)" required>
+                <button type="submit">Kitabı Sisteme Kaydet</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <h3>Mevcut Kitaplar ve Yönetim</h3>
+        <table class="e-kitap-tablosu">
+            <thead>
+                <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Fiyat</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody id="e-admin-kitap-listesi"></tbody>
+        </table>
+    </main>
+
+    <script src="istekler.js"></script>
+</body>
+</html>

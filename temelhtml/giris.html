@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stil.css">
+    <title>Üye Girişi ve Kayıt</title>
+</head>
+<body>
+    <nav class="e-ust-menu">
+        <a href="index.html">Anasayfa</a>
+        <a href="kitaplar.html">Kitap Listesi</a>
+        <a href="giris.html">Giriş Yap / Kayıt</a>
+        <a href="admin.html">Admin Paneli</a>
+    </nav>
+
+    <main style="padding: 20px; display: flex; gap: 50px;">
+        <section class="e-form-alani">
+            <h3>Yeni Üyelik Oluştur</h3>
+            <form action="/api/251109039/kitaplar" method="GET"> <input type="text" placeholder="Adınız Soyadınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <input type="password" placeholder="Şifreniz" required>
+                <button type="submit">Kayıt Ol</button>
+            </form>
+        </section>
+
+        <section class="e-form-alani">
+            <h3>Üye Girişi</h3>
+            <form onsubmit="alert('Giriş başarılı, yönetim paneline aktarılıyorsunuz.'); window.location.href='admin.html'; return false;">
+                <input type="email" placeholder="E-posta" required>
+                <input type="password" placeholder="Şifre" required>
+                <button type="submit">Giriş Yap</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
